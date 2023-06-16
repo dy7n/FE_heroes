@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --color-main: #00669F;
+    --color-secundario: #1CD1B0;
+    --color-tertiary: #f3f3f3;
+}
+
+
+/* Header */
+
+header>p {
+    background-color: var(--color-secundario);
+    padding: 10px 0px 10px 27px;
+    font-size: 15px;
+}
+
+h1 {
+    background-color: var(--color-main);
+    padding: 28px 0 26px 26px;
+    font-size: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/*main*/
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 154px 0;
+}
+
+.card {
+    background-color: var(--color-tertiary);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card > div {
+    width: 100%;
+    height: 193px;
+    background-size: cover;
+    position: relative;
+}
+
+.card-batman > div {
+    background-image: url("../img/batmanBackground.png");
+
+}
+
+.card-harley > div {
+    background-image: url("../img/harleyBackground.png");
+}
+
+
+i {
+    position: absolute;
+    color: #cc2424;
+    left: 21px;
+    top: 16px;
+    /*padding: 16px 0 0 21px*/
+}
+
+.card > img {
+    position: absolute;
+    top:127px;
+    border-radius: 50%;
+}
+
+h3 {
+    margin-top: 73px;
+    font-size: 30px;
+
+}
+
+.card-batman > h3 {
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 16px;
+}
+
+.card button {
+    background-color: var(--color-main);
+    color: var(--color-tertiary);
+    border: none;
+    padding: 15px 38px;
+    margin: 37px 0 19px 0;
+}
+
+/*footer*/
+footer {
+    background-color: var(--color-main);
+    color: #fff9f9;
+}
+
+footer p {
+    font-size: 16px;
+    padding: 16px
+}
